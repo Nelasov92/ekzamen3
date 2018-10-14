@@ -1,0 +1,117 @@
+.header {
+	background: url(../images/bg-header.jpg) no-repeat top center;
+	background-size: cover;
+	position: relative;
+
+	@media (max-width: 1024px) and (min-width: 768px) {
+
+	}
+
+	@media (max-width: 667px) and (min-width: 375px) {
+
+	}
+
+
+	&:before {
+		content: '';
+		background: $blue;
+		@include pos($t:0, $r:0, $b:0, $l:0);
+		margin: auto;
+		opacity: .5;
+	}
+
+	&__menu {
+		padding-top: 60px;
+	}
+
+	&__info {
+		padding-top: 280px;
+		padding-bottom: 500px;
+		text-align: center;
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			padding-top: 100px;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			padding-top: 50px;
+		}
+
+		&-title {
+			font: 700 72px $title;
+			color: #FFF;
+			text-transform: uppercase;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 700 48px $title;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 700 36px $title;
+			}
+		}
+
+		&-text {
+			font: 400 30px $font;
+			font-style: italic;;
+			color: #FFF;
+			padding-top: 40px;
+			margin: 0 auto;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 400 24px $font;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 400 18px $font;
+			}
+
+		}
+	}
+}
+
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: nowrap;
+
+	&__item {
+		padding: 20px;
+
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			padding: 12px;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			padding: 5px;
+		}
+	}
+
+	&__link {
+		font: 700 24px $title;
+		color: #FFF;
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			font: 700 16px $title;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			font: 700 12px $title;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $hover;
+		}
+
+	}
+}
+
+
+
+
+
+
+

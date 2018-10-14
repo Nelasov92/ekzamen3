@@ -1,0 +1,71 @@
+.works {
+	background: url(../images/bg-slider.jpg) no-repeat top center;
+	background-size: cover;
+	position: relative;
+	text-align: center;
+
+	&:before {
+		content: '';
+		background: $blue;
+		@include pos($t:0, $r:0, $b:0, $l:0);
+		margin: auto;
+		opacity: .95;
+	}
+
+	&__icon {
+		margin-top: 45px;
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			margin-top: 30px;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			margin-top: 20px;
+		}
+	}
+
+	&__title {
+		font: 700 36px $title;
+		color: #FFF;
+		margin: 70px 35px;
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			font: 700 24px $title;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			font: 700 18px $title;
+		}
+	}
+
+	&__btn {
+		font: 400 20px $font;
+		font-style: italic;
+		color: #FFF;
+		background: transparent;
+		border: 1px solid #fff;
+		padding: 14px 45px;
+		margin-bottom: 60px;
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			font: 400 16px $font;
+			padding: 10px 30px;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			font: 400 12px $font;
+			padding: 8px 20px;
+		}
+
+		&:hover {
+			color: $hover;
+			border-radius: 20px;
+			cursor: pointer;
+		}
+	}
+
+}
+
+.slide {
+	padding-bottom: 100px;
+}

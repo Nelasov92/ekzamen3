@@ -1,0 +1,30 @@
+.footer {
+	background: #9f9acf;
+
+	&__item {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: nowrap;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				display: none;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				display: none;
+			}
+
+	}
+
+	&__link {
+		padding: 20px;
+		margin-top: 20px;
+	}
+
+	&__text {
+		font: 400 18px $font;
+		color: #FFF;
+		padding: 50px;
+	}
+
+}

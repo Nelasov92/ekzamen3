@@ -1,0 +1,197 @@
+.about {
+	padding-top: 125px;
+
+	&__foto {
+		position: relative;
+		padding-bottom: 80px;
+
+		&-icon {
+			@include pos($t: 75px, $r:0, $b:0, $l:0);
+			text-align: center;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+
+				@include pos($t: 0, $r:0, $b:0, $l:0);
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+
+				@include pos($t: 0, $r:0, $b:0, $l:0);
+			}
+			}
+
+		&-text {
+			font: 700 36px $title;
+			color: #FFF;
+			padding: 40px;
+			text-align: center;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 700 24px $title;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 700 18px $title;
+			}
+		}
+	}
+
+	&__block {
+
+		&-text {
+			font: 20px $font;
+			color: $grey;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 12px $font;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 8px $font;
+			}
+		}
+
+		&-btn {
+			margin-top: 100px;
+			padding: 17px 50px;
+			background: #fff;
+			border: 2px solid $grey;
+			font: 400 20px $font;
+			color: $grey;
+			cursor: pointer;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 400 14px $font;
+				padding: 10px 30px;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 400 8px $font;
+				padding: 5px 20px;
+				margin-top: 40px;
+			}
+
+
+			&:hover {
+				background: $grey;
+				color: $hover;
+			}
+		}
+	}
+
+	&__blocks {
+		background: #dbdbdb;
+		padding: 100px;
+		text-align: center;
+
+		@media (max-width: 1024px) and (min-width: 768px) {
+			padding: 30px;
+		}
+
+		@media (max-width: 667px) and (min-width: 375px) {
+			padding: 15px;
+		}
+
+		&:nth-child(3n-2) {
+			background: #ebebeb;
+		}
+
+		&-foto {
+			@media (max-width: 1024px) and (min-width: 768px) {
+				width: 20%;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				width: 15%;
+			}
+		}
+
+		&-title {
+			font: 700 24px $font;
+			color: $grey;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 700 14px $font;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 700 8px $font;
+			}
+		}
+
+		&-text {
+			font: 400 18px $font;
+			font-style: italic;
+			color: $grey;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 400 10px $font;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 400 6px $font;
+			}
+		}
+	}
+
+	&__colum {
+		@include size(100%);
+		text-align: center;
+		background: url(../images/foto-block.jpg);
+		background-position: -400px 0 ;
+		background-size: 1000px;
+		position: relative;
+
+		&:before {
+			content: '';
+			background: $blue;
+			@include pos($t:0, $r:0, $b:0, $l:0);
+			margin: auto;
+			opacity: .5;
+		}
+
+		&-foto {
+			margin-top: 120px;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				margin-top: 50px;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				margin-top: 30px;
+			}
+		}
+
+		&-title {
+			font: 700 24px $font;
+			color: #fff;
+			margin-top: 60px;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 700 14px $font;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 700 8px $font;
+			}
+		}
+
+		&-text {
+			font: 400 18px $font;
+			font-style: italic;
+			color: #fff;
+			margin-top: 70px;
+
+			@media (max-width: 1024px) and (min-width: 768px) {
+				font: 400 10px $font;
+				margin-top: 40px;
+			}
+
+			@media (max-width: 667px) and (min-width: 375px) {
+				font: 400 6px $font;
+				margin-top: 20px;
+			}
+		}
+
+	}
+}
